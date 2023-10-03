@@ -3,39 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Account Navigation</title>
+    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="navigation.css" rel="stylesheet">
 </head>
 <body>
-<table>
-  <tbody>
-  <tr valign="baseline">
-    <td>
-      <ul>
-        <li><a href="account_navigation.html">Account</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="course_navigation.html">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li><a href="#">Notifications</a></li>
-        <li><a href="profile/index.html">Profile</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">ePortfolios</a></li>
-        <li><a href="#">Shared Content</a></li>
-        <li><a href="#">The Hub</a></li>
-        <li><a href="#">Qwickly Course Tools</a></li>
-        <li><a href="#">Global Announcements</a></li>
-      </ul>
-    </td>
-  </tr>
-  </tbody>
-</table>
+<div class="wrapper">
+    <ul class="list-group kanbas-nav-outer">
+        <li class="list-group-item kanbas-nav-item">
+            <img width=80px
+                 src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"/>
+        </li>
+        <li class="list-group-item kanbas-nav-item selected" id="account">
+            <a href="account_navigation.html">
+                <i class="fa-solid fa-circle-user fa-3x"></i>
+                <span>Account</span>
+            </a>
+        </li>
+        <li class="list-group-item kanbas-nav-item">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-gauge fa-2x" style="color: #d41b2c;"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li class="list-group-item kanbas-nav-item">
+            <a href="course_navigation.html">
+                <i class="fa-solid fa-book fa-2x" style="color: #d41b2c;"></i>
+                <span>Courses</span>
+            </a>
+        </li>
+        <li class="list-group-item kanbas-nav-item"><a href="#">
+            <i class="fa-solid fa-calendar-days fa-2x" style="color: #d41b2c;"></i>
+            <span>Calendar</span>
+        </a>
+        </li>
+        <li class="list-group-item kanbas-nav-item"><a href="#">
+            <i class="fa-solid fa-inbox fa-2x" style="color: #d41b2c;"></i>
+            <span>Inbox</span>
+        </a>
+        </li>
+        <li class="list-group-item kanbas-nav-item"><a href="#">
+            <i class="fa-regular fa-clock fa-2x" style="color: #d41b2c;"></i>
+            <span>History</span>
+        </a>
+        </li>
+        <li class="list-group-item kanbas-nav-item"><a href="#">
+            <i class="fa-solid fa-tv fa-2x" style="color: #d41b2c;"></i>
+            <span>Studio</span>
+        </a>
+        </li>
+        <li class="list-group-item kanbas-nav-item"><a href="#">
+            <i class="fa-solid fa-right-from-bracket fa-2x" style="color: #d41b2c;"></i>
+            <span>Commons</span>
+        </a>
+        </li>
+        <li class="list-group-item kanbas-nav-item"><a href="#">
+            <i class="fa-regular fa-circle-question fa-2x" style="color: #d41b2c;"></i>
+            <span>Help</span>
+        </a>
+        </li>
+    </ul>
+    <div class="content-wrapper">
+        <ul class="list-group nav-outer">
+            <li class="list-group-item nav-item"><a href="#">Notifications</a></li>
+            <li class="list-group-item nav-item"><a href="profile/index.html">Profile</a></li>
+            <li class="list-group-item nav-item"><a href="#">Files</a></li>
+            <li class="list-group-item nav-item"><a href="#">Settings</a></li>
+            <li class="list-group-item nav-item"><a href="#">ePortfolios</a></li>
+            <li class="list-group-item nav-item"><a href="#">Shared Content</a></li>
+            <li class="list-group-item nav-item"><a href="#">The Hub</a></li>
+            <li class="list-group-item nav-item"><a href="#">Qwickly Course Tools</a></li>
+            <li class="list-group-item nav-item"><a href="#">Global Announcements</a></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
