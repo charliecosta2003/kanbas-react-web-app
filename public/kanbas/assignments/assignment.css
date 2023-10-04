@@ -40,3 +40,21 @@
     width: 60%;
     max-width: 60%;
 }
+
+.form-border-no-bottom {
+    border: 1px solid #ced4da;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.add-button {
+    width: 100%;
+    background-color: #f6f5f5;
+    margin: 0;
+    border-top: 0;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
