@@ -103,21 +103,21 @@
             <li class="list-group-item nav-item"><a href="#">Syllabus</a></li>
             <li class="list-group-item nav-item"><a href="#">Settings</a></li>
         </ul>
-        <div class="module-wrapper-outer">
-            <div class="row">
-                <div class="col nowrap">
-                    <button type="button" class="btn float-end grey-button"><i class="fa-solid fa-ellipsis-vertical"
-                                                                               style="color: #292b2d;"></i></button>
-                    <button type="button" class="btn btn-danger float-end me-1"><i class="fa-solid fa-plus me-1"
-                                                                                   style="color: #ffffff;"></i>Module
-                    </button>
-                    <select class="form-select float-end grey-button me-1" id="select-publish">
+        <div>
+                <div class="d-flex flex-nowrap justify-content-end">
+                    <button type="button" class="btn grey-button me-1 top-button">Collapse All</button>
+                    <button type="button" class="btn grey-button me-1 top-button">View Progress</button>
+                    <select class="form-select grey-button me-1 top-button" id="select-publish">
                         <option selected value="PUBLISH ALL">Publish All</option>
                     </select>
-                    <button type="button" class="btn grey-button float-end me-1">View Progress</button>
-                    <button type="button" class="btn grey-button float-end me-1">Collapse All</button>
+                    <button type="button" class="btn btn-danger me-1 top-button">
+                        <i class="fa-solid fa-plus me-1"></i>
+                        Module
+                    </button>
+                    <button type="button" class="btn grey-button top-button">
+                        <i class="fa-solid fa-ellipsis-vertical" style="color: #292b2d;"></i>
+                    </button>
                 </div>
-            </div>
             <hr/>
             <div class="d-flex">
                 <div class="module-wrapper-inner flex-grow-1 me-5">
@@ -217,7 +217,7 @@
                         </li>
                     </ul>
 
-                    <ul class="list-group">
+                    <ul class="list-group mb-5">
                         <li class="list-group-item list-group-item-secondary ps-2 black-text">
                             <i class="fa-solid fa-grip-vertical me-1 ms-1" style="color: #6a7177;"></i>
                             <i class="fa-solid fa-caret-down fa-xs me-2"></i>
@@ -341,64 +341,109 @@
                         </li>
                     </ul>
                 </div>
-                <div class="status-wrapper">
+                <div class="status-wrapper me-2">
                     <h6>Course Status</h6>
                     <div class="d-flex flex-nowrap mb-3">
-                        <button class="publish btn grey-button no-radius"><i class="fa-solid fa-ban me-1"></i>Unpublish</button>
-                        <button class="publish btn btn-success disabled no-radius"><i class="fa-solid fa-circle-check me-1"
-                                                                            style="color: #ffffff;"></i>Published
+                        <button class="publish btn grey-button no-radius"><i class="fa-solid fa-ban me-1"></i>Unpublish
+                        </button>
+                        <button class="publish btn btn-success disabled no-radius"><i
+                                class="fa-solid fa-circle-check me-1"
+                                style="color: #ffffff;"></i>Published
                         </button>
                     </div>
                     <div class="option-list">
                         <ul class="list-group">
-                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">Import Existing Content</a></li>
-                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">Import From Commons</a></li>
-                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">Choose Home Page</a></li>
-                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">View Course Stream</a></li>
-                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">New Announcement</a></li>
-                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">New Analytics</a></li>
-                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">View Course Notifications</a></li>
+                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">
+                                <i class="fa-solid fa-file-import"></i>
+                                Import Existing Content</a></li>
+                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Import From Commons</a></li>
+                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                                Choose Home Page</a></li>
+                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                View Course Stream</a></li>
+                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                New Announcement</a></li>
+                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                New Analytics</a>
+                            </li>
+                            <li><a role="button" class="list-group-item btn grey-button mb-1" href="#">
+                                <i class="fa-solid fa-bell"></i>
+                                View Course Notifications</a></li>
                         </ul>
                     </div>
-
-
+                    <div class="course-status-list mt-3 mb-4">
+                        <h6 class="float-start">To Do</h6>
+                        <div class="float-end">
+                            <i class="fa-regular fa-calendar"></i>
+                            <a href="#" class="small-link">View Calendar</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr class="mt-1 mb-2"/>
+                        <ul class="ps-2">
+                            <li>
+                                <div class="me-3 float-start">
+                                    <i class="fa-solid fa-circle-dot" style="color: #b52828;"></i>
+                                </div>
+                                <div class="float-start">
+                                    <a href="#">Grade A1 - ENV + HTML</a>
+                                    <p>100 points &#x2022; Sep 18 at 11:59pm</p>
+                                </div>
+                                <div class="float-end">
+                                    <i class="fa-solid fa-xmark" style="color: grey"></i>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="course-status-list mt-3">
+                        <h6>Coming Up</h6>
+                        <hr class="mt-1 mb-2"/>
+                        <ul class="ps-0">
+                            <li>
+                                <div class="me-3 float-start">
+                                    <i class="fa-regular fa-calendar"></i>
+                                </div>
+                                <div class="float-start">
+                                    <a href="#">Lecture</a>
+                                    <p>CS4550.12631.202410</p>
+                                    <p>Sep 11 at 11:45am</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <div class="me-3 float-start">
+                                    <i class="fa-regular fa-calendar"></i>
+                                </div>
+                                <div class="float-start">
+                                    <a href="#">CS5610 06 SP23 Lecture</a>
+                                    <p>CS4550.12631.202410</p>
+                                    <p>Sep 11 at 6pm</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <div class="me-3 float-start">
+                                    <i class="fa-regular fa-calendar"></i>
+                                </div>
+                                <div class="float-start"><a href="#">CS5610 Web Development Summer 1 2023 - LECTURE</a>
+                                    <p>CS4550.12631.202410</p>
+                                    <p>Sep 11 at 7pm</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                        <a href="#" class="small-link">12 more in the next week ...</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-<table width="100%">
-    <tbody>
-    <td width="80%">
-        <h2>Course Status</h2>
-        <button>Unpublish</button>
-        <button>Published</button>
-        <ul>
-            <li><a href="#">Import Existing Content</a></li>
-            <li><a href="#">Import From Commons</a></li>
-            <li><a href="#">Choose Home Page</a></li>
-            <li><a href="#">View Course Stream</a></li>
-            <li><a href="#">New Announcement</a></li>
-            <li><a href="#">New Analytics</a></li>
-            <li><a href="#">View Course Notifications</a></li>
-        </ul>
-
-        <h2>Coming Up</h2>
-        <a href="#">View Calendar</a>
-        <ul>
-            <li><a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
-            <li><a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
-            <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
-        </ul>
-    </td>
-    </tr>
-    </tbody>
-</table>
-
 </body>
 </html>
-
-
-IN MORNING: FINISH RIGHT COLUMN STUFF AND ADD ICONS TO ALL BUTTONS. THEN DO READINGS. THEN WORK ON THEORY. THEN RETURN TO THIS

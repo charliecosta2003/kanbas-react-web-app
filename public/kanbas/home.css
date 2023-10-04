@@ -1,37 +1,12 @@
-.top-bar a {
-    text-decoration: none;
-    color: #b52828;
-}
-
-.top-bar li {
-    font-size: 20px;
-}
-
 #select-publish {
     width: 135px;
-}
-
-.nowrap {
-    min-width: 540px;
-}
-
-.green-left-border {
-    border-left: 4px solid #008242;
 }
 
 .indent {
     padding-right: 30px;
 }
 
-.module-wrapper-inner li a {
-    text-decoration: none;
-    color: #b52828;
-}
 
-.module-wrapper-inner li {
-    color: #4c5860;
-    font-weight: 500;
-}
 
 .publish {
     flex: 0 0 auto;
@@ -53,3 +28,55 @@
     text-align: left;
     white-space: nowrap;
 }
+
+.course-status-list ul {
+    list-style-type: none;
+}
+
+.course-status-list li {
+    margin-bottom: 20px;
+}
+
+.course-status-list a {
+    text-decoration: none;
+    color: #b52828;
+}
+
+.course-status-list li p {
+    color: grey;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.small-link {
+    font-size: 14px;
+}
+
+.module-wrapper-inner li a {
+    text-decoration: none;
+    color: #b52828;
+}
+
+.module-wrapper-inner li {
+    color: #4c5860;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

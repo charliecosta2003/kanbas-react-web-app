@@ -32,4 +32,31 @@
     border: 1px solid #c7cdd1;
 }
 
+.top-bar a {
+    text-decoration: none;
+    color: #b52828;
+}
+
+.top-bar li {
+    font-size: 20px;
+}
+
+.top-button {
+    max-height: 40px;
+    white-space: nowrap;
+}
+
+.green-left-border {
+    border-left: 4px solid #008242;
+}
+
+.red-link {
+    text-decoration: none;
+    color: #b52828;
+}
+
+.module-wrapper-inner > ul {
+    border-radius: 0;
+}
+
 

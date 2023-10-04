@@ -1,0 +1,42 @@
+#searchbar {
+    width: 225px;
+}
+
+.button-layout {
+    justify-content: space-between;
+}
+
+.assignment-list p {
+    color: grey;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.darker-grey {
+    color: #5f6c73;
+}
+
+.assignment-list li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.assignment-list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-border {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.w-65 {
+    min-width: 60%;
+    width: 60%;
+    max-width: 60%;
+}
