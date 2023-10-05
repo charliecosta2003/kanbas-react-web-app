@@ -70,3 +70,11 @@
     color: black;
 }
 
+#kanbas-navigation-dropdown li {
+    border: 0;
+}
+
+#course-navigation-dropdown li {
+    padding: 0;
+}
+

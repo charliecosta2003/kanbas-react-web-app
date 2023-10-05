@@ -5,7 +5,7 @@
     <title>Home</title>
     <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
-    <link href="stylestesting.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="navigation.css" rel="stylesheet">
     <link href="home.css" rel="stylesheet">
     <script src="/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -68,78 +68,82 @@
         </li>
     </ul>
     <div class="outer-content-wrapper w-100">
-        <div class="d-block d-md-none mb-4">
+        <div class="d-block d-md-none">
             <nav class="hidden-top-bar">
                 <div>
                     <button type="button" class="bg-black text-white border-0 ms-2" data-bs-toggle="modal"
                             data-bs-target="#kanbas-navigation-dropdown">
                         <i class="fa-solid fa-bars fa-2x"></i>
                     </button>
-                    <div class="modal fade" id="kanbas-navigation-dropdown" tabindex="-1" aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
+                    <div class="modal fade" id="kanbas-navigation-dropdown" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header border-bottom-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close mt-3 me-4" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body text-black">
                                     <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <a class="red-link" href="dashboard.html">
-                                                <i class="fa-solid fa-gauge fa-2x" style="color: #d41b2c;"></i>
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center">
+                                            <a class="red-link d-flex flex-nowrap align-items-center"
+                                               href="dashboard.html">
+                                                <i class="fa-solid fa-gauge fa-2x me-4"></i>
                                                 <span>Dashboard</span>
                                             </a>
                                         </li>
-                                        <li class="list-group-item">
-                                            <a class="red-link" href="account_navigation.html">
-                                                <i class="fa-solid fa-circle-user fa-2x" style="color: grey"></i>
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center justify-content-between ps-4">
+                                            <a class="red-link d-flex flex-nowrap align-items-center"
+                                               href="account_navigation.html">
+                                                <i class="fa-solid fa-circle-user fa-2x me-4" style="color: grey"></i>
                                                 <span>Account</span>
                                             </a>
+                                            <i class="fa-solid fa-chevron-right"></i>
                                         </li>
-                                        <li class="list-group-item">
-                                            <a class="red-link" href="course_navigation.html">
-                                                <i class="fa-solid fa-book fa-2x" style="color: #d41b2c;"></i>
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center justify-content-between ps-4">
+                                            <a class="red-link d-flex flex-nowrap align-items-center"
+                                               href="course_navigation.html">
+                                                <i class="fa-solid fa-book fa-2x me-4"></i>
                                                 <span>Courses</span>
                                             </a>
+                                            <i class="fa-solid fa-chevron-right"></i>
                                         </li>
-                                        <li class="list-group-item">
-                                            <a class="red-link" href="#">
-                                                <i class="fa-solid fa-calendar-days fa-2x" style="color: #d41b2c;"></i>
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center">
+                                            <a class="red-link d-flex flex-nowrap align-items-center" href="#">
+                                                <i class="fa-solid fa-calendar-days fa-2x me-4"></i>
                                                 <span>Calendar</span>
                                             </a>
                                         </li>
-                                        <li class="list-group-item">
-                                            <a class="red-link" href="#">
-                                                <i class="fa-solid fa-inbox fa-2x" style="color: #d41b2c;"></i>
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center">
+                                            <a class="red-link d-flex flex-nowrap align-items-center" href="#">
+                                                <i class="fa-solid fa-inbox fa-2x me-4"></i>
                                                 <span>Inbox</span>
                                             </a>
                                         </li>
-                                        <li class="list-group-item">
-                                            <a class="red-link" href="#">
-                                                <i class="fa-regular fa-clock fa-2x" style="color: #d41b2c;"></i>
-                                                <span>History</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <a class="red-link" href="#">
-                                                <i class="fa-solid fa-tv fa-2x" style="color: #d41b2c;"></i>
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center">
+                                            <a class="red-link d-flex flex-nowrap align-items-center" href="#">
+                                                <i class="fa-solid fa-tv fa-2x me-4"></i>
                                                 <span>Studio</span>
                                             </a>
                                         </li>
-                                        <li class="list-group-item">
-                                            <a class="red-link" href="#">
-                                                <i class="fa-solid fa-right-from-bracket fa-2x"
-                                                   style="color: #d41b2c;"></i>
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center">
+                                            <a class="red-link d-flex flex-nowrap align-items-center" href="#">
+                                                <i class="fa-solid fa-right-from-bracket fa-2x me-4"></i>
                                                 <span>Commons</span>
                                             </a>
                                         </li>
-                                        <li class="list-group-item">
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center justify-content-between ps-4">
                                             <a class="red-link" href="#">
-                                                <i class="fa-regular fa-circle-question fa-2x"
-                                                   style="color: #d41b2c;"></i>
+                                                <i class="fa-regular fa-clock fa-2x me-4"></i>
+                                                <span>History</span>
+                                            </a>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </li>
+                                        <li class="list-group-item d-flex flex-nowrap align-items-center justify-content-between ps-4">
+                                            <a class="red-link" href="#">
+                                                <i class="fa-regular fa-circle-question fa-2x me-4"></i>
                                                 <span>Help</span>
                                             </a>
+                                            <i class="fa-solid fa-chevron-right"></i>
                                         </li>
                                     </ul>
                                 </div>
@@ -153,11 +157,38 @@
                 </div>
                 <div>
                     <i class="fa-solid fa-glasses fa-sm"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <a class="text-decoration-none text-white me-3" data-bs-toggle="collapse" href="#course-navigation-dropdown" role="button"
+                       aria-expanded="false" aria-controls="course-navigation-dropdown">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
                 </div>
             </nav>
         </div>
-        <div class="content-wrapper ms-sm-15 ms-md-100">
+        <div class="collapse" id="course-navigation-dropdown">
+            <div class="card card-body">
+                <ul class="list-group nav-outer">
+                    <li class="list-group-item nav-item"><a href="home.html"><i class="fa-solid fa-house me-2"></i>Home</a></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-life-ring me-2"></i>Modules</a></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-plug me-2"></i>Piazza</a></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-plug me-2"></i>Zoom Meetings</a></li>
+                    <li class="list-group-item nav-item"><a href="assignments/index.html"><i class="fa-solid fa-pen-to-square me-2"></i>Assignments</a></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-rocket me-2"></i>Quizzes</a></li>
+                    <li class="list-group-item nav-item"><a href="grades.html"><i class="fa-solid fa-clipboard-check me-2"></i>Grades</a></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-users me-2"></i>People</a></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-plug me-2"></i>Panopto Video</a></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-regular fa-comments me-2"></i>Discussions</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4"></i></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-bullhorn me-2"></i>Announcements</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4"></i></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-file-lines me-2"></i>Pages</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4"></i></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-regular fa-folder me-2"></i>Files</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4"></i></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-clipboard-list me-2"></i>Rubrics</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4"></i></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-bullseye me-2"></i>Outcomes</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4"></i></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-regular fa-circle me-2"></i>Collaborations</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4"></i></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-regular fa-file-lines me-2"></i>Syllabus</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4"></i></li>
+                    <li class="list-group-item nav-item"><a href="#"><i class="fa-solid fa-gear me-2"></i>Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-wrapper mt-4 ms-sm-15 ms-md-100">
             <div class="d-none d-md-block">
                 <nav class="top-bar"
                      style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
@@ -187,14 +218,14 @@
                 <li class="list-group-item nav-item"><a href="grades.html">Grades</a></li>
                 <li class="list-group-item nav-item"><a href="#">People</a></li>
                 <li class="list-group-item nav-item"><a href="#">Panopto Video</a></li>
-                <li class="list-group-item nav-item"><a href="#">Discussions</a></li>
-                <li class="list-group-item nav-item"><a href="#">Announcements</a></li>
-                <li class="list-group-item nav-item"><a href="#">Pages</a></li>
-                <li class="list-group-item nav-item"><a href="#">Files</a></li>
-                <li class="list-group-item nav-item"><a href="#">Rubrics</a></li>
-                <li class="list-group-item nav-item"><a href="#">Outcomes</a></li>
-                <li class="list-group-item nav-item"><a href="#">Collaborations</a></li>
-                <li class="list-group-item nav-item"><a href="#">Syllabus</a></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Discussions</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Pages</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Files</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
                 <li class="list-group-item nav-item"><a href="#">Settings</a></li>
             </ul>
             <div>
@@ -310,7 +341,6 @@
                                 <i class="fa-solid fa-circle-check float-end" style="color: #008242;"></i>
                             </li>
                         </ul>
-
                         <ul class="list-group mb-5">
                             <li class="list-group-item list-group-item-secondary ps-2 black-text">
                                 <i class="fa-solid fa-grip-vertical me-1 ms-1" style="color: #6a7177;"></i>
@@ -435,7 +465,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="status-wrapper ms-5 me-2 d-none d-lg-block">
+                    <div class="status-wrapper ms-5 me-2 d-none d-xl-block">
                         <h6>Course Status</h6>
                         <div class="d-flex flex-nowrap mb-3">
                             <button class="publish btn grey-button no-radius"><i class="fa-solid fa-ban me-1"></i>Unpublish
