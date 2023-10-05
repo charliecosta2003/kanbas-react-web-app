@@ -31,3 +31,12 @@ th:not(.first-col) {
 .darker-blue {
     background-color: #c5e8ef;
 }
+
+#export {
+    padding-left: 30px;
+    width: 114px;
+}
+
+#export-icon {
+    margin: 11px 2px 0 10px;
+}

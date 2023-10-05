@@ -18,7 +18,7 @@
                  src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"/>
         </li>
         <li class="list-group-item kanbas-nav-item" id="account">
-            <a href="account_navigation.html">
+            <a href="profile/index.html">
                 <i class="fa-solid fa-circle-user fa-3x"></i>
                 <span>Account</span>
             </a>
@@ -30,7 +30,7 @@
             </a>
         </li>
         <li class="list-group-item kanbas-nav-item selected">
-            <a href="course_navigation.html">
+            <a href="home.html">
                 <i class="fa-solid fa-book fa-2x" style="color: #d41b2c;"></i>
                 <span>Courses</span>
             </a>
@@ -92,7 +92,7 @@
                                         </li>
                                         <li class="list-group-item d-flex flex-nowrap align-items-center justify-content-between ps-4">
                                             <a class="red-link d-flex flex-nowrap align-items-center"
-                                               href="account_navigation.html">
+                                               href="profile/index.html">
                                                 <i class="fa-solid fa-circle-user fa-2x me-4" style="color: grey"></i>
                                                 <span>Account</span>
                                             </a>
@@ -100,7 +100,7 @@
                                         </li>
                                         <li class="list-group-item d-flex flex-nowrap align-items-center justify-content-between ps-4">
                                             <a class="red-link d-flex flex-nowrap align-items-center"
-                                               href="course_navigation.html">
+                                               href="home.html">
                                                 <i class="fa-solid fa-book fa-2x me-4"></i>
                                                 <span>Courses</span>
                                             </a>
@@ -231,14 +231,14 @@
                 <li class="list-group-item nav-item selected"><a href="grades.html">Grades</a></li>
                 <li class="list-group-item nav-item"><a href="#">People</a></li>
                 <li class="list-group-item nav-item"><a href="#">Panopto Video</a></li>
-                <li class="list-group-item nav-item"><a href="#">Discussions</a></li>
-                <li class="list-group-item nav-item"><a href="#">Announcements</a></li>
-                <li class="list-group-item nav-item"><a href="#">Pages</a></li>
-                <li class="list-group-item nav-item"><a href="#">Files</a></li>
-                <li class="list-group-item nav-item"><a href="#">Rubrics</a></li>
-                <li class="list-group-item nav-item"><a href="#">Outcomes</a></li>
-                <li class="list-group-item nav-item"><a href="#">Collaborations</a></li>
-                <li class="list-group-item nav-item"><a href="#">Syllabus</a></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Discussions</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Pages</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Files</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
+                <li class="list-group-item nav-item pe-3"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash fa-flip-horizontal ms-4 float-end"></i></li>
                 <li class="list-group-item nav-item"><a href="#">Settings</a></li>
             </ul>
             <div>
@@ -247,10 +247,12 @@
                         <i class="fa-solid fa-file-import"></i>
                         Import
                     </button>
-                    <button type="button" class="btn grey-button me-1 top-button">
-                        <i class="fa-solid fa-file-export"></i>
-                        Export
-                    </button>
+                    <div class="d-flex d-nowrap">
+                        <i id="export-icon" class="position-absolute fa-solid fa-file-export"></i>
+                        <select id="export" class="form-select grey-button me-1 top-button">
+                            <option selected>Export</option>
+                        </select>
+                    </div>
                     <button type="button" class="btn grey-button top-button">
                         <i class="fa-solid fa-gear"></i>
                     </button>

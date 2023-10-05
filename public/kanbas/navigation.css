@@ -46,6 +46,7 @@
 /* Account and Course Navigation Styles*/
 .list-group.nav-outer {
     float: left;
+    min-width: 190px;
     width: 190px;
     max-width: 190px;
     border-radius: 0;

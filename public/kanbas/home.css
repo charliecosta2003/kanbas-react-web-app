@@ -1,5 +1,10 @@
 #select-publish {
-    width: 135px;
+    width: 150px;
+    padding-left: 30px;
+}
+
+#select-publish-icon {
+    margin: 11px 2px 0 10px;
 }
 
 .indent {
@@ -62,6 +67,7 @@
 }
 
 .status-wrapper {
+    min-width: 240px;
     max-width: 250px;
 }
 
