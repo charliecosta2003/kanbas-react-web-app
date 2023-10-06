@@ -1,0 +1,67 @@
+#outer-profile-wrapper {
+    display: flex;
+}
+#inner-profile-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#icon-wrapper {
+    flex: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#profile-text {
+    min-width: 320px;
+    margin-left: 20px;
+    flex: 1;
+}
+
+#profile-text > h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.profile-header {
+    font-size: 25px;
+    font-weight: normal;
+    padding-top: 15px;
+}
+
+#profile-text p > a {
+    text-decoration: none;
+    color: #b52828;
+}
+
+#button-wrapper {
+    flex-grow: 1;
+}
+
+.edit-button {
+    min-width: 123px;
+
+}
+
+.cancel-edit-button {
+    min-width: 147px;
+}
+
+.profile-edit-header {
+    font-weight: bold;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+#x {
+    text-align: left;
+}
+
+#save {
+    background-color: #d41b2c;
+}
