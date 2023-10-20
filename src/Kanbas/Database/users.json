@@ -1,0 +1,142 @@
+[
+  {
+    "_id": "121",
+    "username": "judge_aaron",
+    "password": "strongpassword",
+    "firstName": "Aaron",
+    "lastName": "Judge",
+    "email": "ajudge@gmail.com",
+    "dob": "1992-04-06",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "122",
+    "username": "cole_gerrit",
+    "password": "strongpassword",
+    "firstName": "Gerrit",
+    "lastName": "Cole",
+    "email": "gcole@gmail.com",
+    "dob": "1990-09-08",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "123",
+    "username": "stanton_giancarlo",
+    "password": "strongpassword",
+    "firstName": "Giancarlo",
+    "lastName": "Stanton",
+    "email": "gstanton@gmail.com",
+    "dob": "1989-11-08",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "124",
+    "username": "sanchez_gary",
+    "password": "strongpassword",
+    "firstName": "Gary",
+    "lastName": "Sanchez",
+    "email": "gsanchez@gmail.com",
+    "dob": "1992-12-02",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "125",
+    "username": "chapman_aroldis",
+    "password": "strongpassword",
+    "firstName": "Aroldis",
+    "lastName": "Chapman",
+    "email": "achapman@gmail.com",
+    "dob": "1988-02-28",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "126",
+    "username": "lemahieu_dj",
+    "password": "strongpassword",
+    "firstName": "DJ",
+    "lastName": "LeMahieu",
+    "email": "dlemahieu@gmail.com",
+    "dob": "1988-07-13",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "127",
+    "username": "torres_gleyber",
+    "password": "strongpassword",
+    "firstName": "Gleyber",
+    "lastName": "Torres",
+    "email": "gtorres@gmail.com",
+    "dob": "1996-12-13",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "128",
+    "username": "hicks_aaron",
+    "password": "strongpassword",
+    "firstName": "Aaron",
+    "lastName": "Hicks",
+    "email": "ahicks@gmail.com",
+    "dob": "1989-10-02",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "129",
+    "username": "voit_luke",
+    "password": "strongpassword",
+    "firstName": "Luke",
+    "lastName": "Voit",
+    "email": "lvoit@gmail.com",
+    "dob": "1991-02-13",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "130",
+    "username": "urshela_gio",
+    "password": "strongpassword",
+    "firstName": "Gio",
+    "lastName": "Urshela",
+    "email": "gurshela@gmail.com",
+    "dob": "1991-10-11",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "131",
+    "username": "gardner_brett",
+    "password": "strongpassword",
+    "firstName": "Brett",
+    "lastName": "Gardner",
+    "email": "bgardner@gmail.com",
+    "dob": "1983-08-24",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "132",
+    "username": "tanaka_masahiro",
+    "password": "strongpassword",
+    "firstName": "Masahiro",
+    "lastName": "Tanaka",
+    "email": "mtanaka@gmail.com",
+    "dob": "1988-11-01",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "133",
+    "username": "paxton_james",
+    "password": "strongpassword",
+    "firstName": "James",
+    "lastName": "Paxton",
+    "email": "jpaxton@gmail.com",
+    "dob": "1988-11-06",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "134",
+    "username": "severino_luis",
+    "password": "strongpassword",
+    "firstName": "Luis",
+    "lastName": "Severino",
+    "email": "lseverino@gmail.com",
+    "dob": "1994-02-20",
+    "role": "STUDENT"
+  }
+]

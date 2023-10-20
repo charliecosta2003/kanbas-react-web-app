@@ -1,0 +1,39 @@
+.divider {
+    --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E");
+}
+
+#select-publish {
+    width: 150px;
+    padding-left: 30px;
+}
+
+#select-publish-icon {
+    margin: 11px 2px 0 10px;
+}
+
+.status-wrapper {
+    min-width: 240px;
+    max-width: 250px;
+}
+
+.publish {
+    flex: 0 0 auto;
+}
+
+.option-list > .list-group {
+    list-style-type: none;
+}
+
+.option-list li {
+    border-radius: 5px;
+}
+
+.option-list a {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.module-wrapper-inner li {
+    color: #4c5860;
+    font-weight: 500;
+}

@@ -1,0 +1,38 @@
+#searchbar {
+    width: 225px;
+}
+
+.button-layout {
+    justify-content: space-between;
+}
+
+.assignment-list p {
+    color: grey;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.assignment-list p {
+    color: grey;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.assignment-list li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.assignment-list li .link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.list-group-item.green-left-border {
+    border-left: 4px solid #008242;
+}
