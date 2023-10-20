@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import db from "../Database";
 import './index.css';
 
@@ -12,7 +12,7 @@ function Dashboard() {
                     <h1>Dashboard</h1>
                 </div>
             </div>
-            <hr />
+            <hr/>
             <div className="outer-card-wrapper">
                 <h3>Published Courses (3)</h3>
                 <hr className="mt-2"/>

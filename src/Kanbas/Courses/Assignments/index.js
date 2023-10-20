@@ -1,39 +1,21 @@
 import db from "../../Database";
 import {Link, useParams} from "react-router-dom";
-import {FaBars, FaCaretDown, FaGlasses, FaGripVertical, FaPlus} from "react-icons/fa";
+import {FaCaretDown, FaGripVertical, FaPlus} from "react-icons/fa";
 import CourseNavigation from "../CourseNavigation";
 import './index.css';
 import {FaCircleCheck, FaEllipsisVertical, FaPenToSquare} from "react-icons/fa6";
+import TopBar from "../../TopBar";
 
 function Assignments() {
     const {courseId} = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
     const assignments = db.assignments;
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
+    const topBarBreadcrumbs = ["Assignments"];
 
     return (
         <>
-            <div className="d-none d-md-block">
-                <nav className="top-bar divider" aria-label="breadcrumb">
-                    <FaBars size="2em" style={{color: '#b52828'}}></FaBars>
-                    <ol className="breadcrumb">
-                        <li className="breadcrumb-item ms-5">
-                            <Link to={`/Kanbas/Courses/${course._id}/Home`}>{course.name}</Link>
-                        </li>
-                        <li className="breadcrumb-item" aria-current="page">
-                            Assignments
-                        </li>
-                    </ol>
-                    <div className="ms-auto">
-                        <button type="button" className="btn grey-button me-1">
-                            <FaGlasses className="me-1"></FaGlasses>
-                            Student View
-                        </button>
-                    </div>
-                </nav>
-                <hr/>
-            </div>
+            <TopBar breadcrumbs={topBarBreadcrumbs} studentView={true}/>
             <CourseNavigation/>
 
             <div className="d-flex flex-nowrap button-layout">
@@ -70,20 +52,19 @@ function Assignments() {
                 </li>
                 {courseAssignments.map((assignment) => (
                     <li className="list-group-item green-left-border ps-2">
-                        <FaGripVertical />
+                        <FaGripVertical/>
                         <FaPenToSquare className="ms-3 me-3" size="1.5em" style={{color: "#008242"}}/>
                         <Link
-                        key={assignment._id}
-                        to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                        className="link w-100">
-                        {assignment.title}
-                    </Link>
-                        <FaCircleCheck className="me-4" style={{color: "#008242"}} />
-                        <FaEllipsisVertical />
+                            key={assignment._id}
+                            to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+                            className="link w-100">
+                            {assignment.title}
+                        </Link>
+                        <FaCircleCheck className="me-4" style={{color: "#008242"}}/>
+                        <FaEllipsisVertical/>
                     </li>
                 ))}
             </ul>
-
         </>
     );
 }

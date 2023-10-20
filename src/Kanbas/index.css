@@ -61,3 +61,26 @@ select.grey-button {
     max-height: 40px;
     white-space: nowrap;
 }
+
+.hidden-top-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#kanbas-navigation-dropdown li {
+    border: 0;
+}
+
+#course-navigation-dropdown li {
+    padding: 0;
+}
+
+.red-link {
+    text-decoration: none;
+    color: #b52828;
+}

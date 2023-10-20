@@ -4,31 +4,19 @@ import {FaBars, FaFileExport, FaFileImport, FaFilter, FaGlasses, FaSearch} from 
 import CourseNavigation from "../CourseNavigation";
 import {FaGear} from "react-icons/fa6";
 import "./index.css";
+import TopBar from "../../TopBar";
 
 function Grades() {
     const {courseId} = useParams();
     const course = db.courses.find((course) => course._id === courseId);
     const assignments = db.assignments.filter((assignment) => assignment.course === courseId);
     const enrollments = db.enrollments.filter((enrollment) => enrollment.course === courseId);
+    const topBarBreadcrumbs = ["Grades"];
 
     return (
         <>
-            <div className="d-none d-md-block">
-                <nav className="top-bar divider" aria-label="breadcrumb">
-                    <FaBars size="2em" style={{color: '#b52828'}}></FaBars>
-                    <ol className="breadcrumb">
-                        <li className="breadcrumb-item ms-5">
-                            <Link to={`/Kanbas/Courses/${course._id}/Home`}>{course.name}</Link>
-                        </li>
-                        <li className="breadcrumb-item" aria-current="page">
-                            Grades
-                        </li>
-                    </ol>
-                </nav>
-                <hr/>
-            </div>
+            <TopBar breadcrumbs={topBarBreadcrumbs} studentView={false}/>
             <CourseNavigation/>
-
 
             <div className="d-flex flex-nowrap justify-content-end mb-2">
                 <button type="button" className="btn grey-button me-1 top-button">
@@ -36,13 +24,13 @@ function Grades() {
                     Import
                 </button>
                 <div className="d-flex d-nowrap">
-                    <FaFileExport className="position-absolute" id="export-icon" />
+                    <FaFileExport className="position-absolute" id="export-icon"/>
                     <select id="export" className="form-select grey-button me-1 top-button">
                         <option selected>Export</option>
                     </select>
                 </div>
                 <button type="button" className="btn grey-button top-button">
-                    <FaGear className="mb-1" />
+                    <FaGear className="mb-1"/>
                 </button>
             </div>
             <div className="row mb-3">
@@ -52,7 +40,7 @@ function Grades() {
                         Student Names
                     </label>
                     <div>
-                        <FaSearch className="position-absolute search-icon ms-2" />
+                        <FaSearch className="position-absolute search-icon ms-2"/>
                         <input className="form-control ps-5" id="text-fields-student-names"
                                placeholder="Search Students"/>
                     </div>
@@ -63,14 +51,14 @@ function Grades() {
                         Assignment Names
                     </label>
                     <div>
-                        <FaSearch className="position-absolute search-icon ms-2" />
+                        <FaSearch className="position-absolute search-icon ms-2"/>
                         <input className="form-control ps-5" id="text-fields-assignment-names"
                                placeholder="Search Assignments"/>
                     </div>
                 </div>
             </div>
             <button className="btn grey-button mb-3">
-                <FaFilter />
+                <FaFilter/>
                 Apply Filters
             </button>
 

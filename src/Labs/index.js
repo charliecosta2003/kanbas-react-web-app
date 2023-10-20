@@ -3,7 +3,7 @@ import Nav from "../Nav";
 
 function Labs() {
     return (
-        <div>
+        <div className="container">
             <Nav />
             <Assignment3 />
         </div>
