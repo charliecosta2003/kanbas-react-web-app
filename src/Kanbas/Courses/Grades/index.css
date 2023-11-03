@@ -1,0 +1,20 @@
+.search-icon {
+    margin-top: 12px;
+}
+
+#export {
+    padding-left: 30px;
+    width: 114px;
+}
+
+#export-icon {
+    margin: 11px 2px 0 10px;
+}
+
+td:not(.first-col), th:not(.first-col) {
+    text-align: center;
+}
+
+td.first-col span{
+    color: #b52828;
+}

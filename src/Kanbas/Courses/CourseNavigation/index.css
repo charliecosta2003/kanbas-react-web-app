@@ -1,0 +1,30 @@
+.list-group.nav-outer {
+    float: left;
+    min-width: 190px;
+    width: 190px;
+    max-width: 190px;
+    border-radius: 0;
+}
+
+.list-group-item.nav-item {
+    border: none;
+    padding: 8px 0 8px 8px;
+    border-left: 2px solid rgba(0, 0, 0, 0);
+}
+
+.list-group-item.nav-item > .link {
+    text-decoration: none;
+    color: #b52828;
+}
+
+.nav-item.selected {
+    border-left: 2px solid black;
+}
+
+.nav-item.selected .link {
+    color: black;
+}
+
+.flip-horizontal {
+    transform: scaleX(-1);
+}
