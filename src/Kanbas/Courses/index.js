@@ -7,8 +7,6 @@ import './index.css';
 import Grades from "./Grades";
 
 function Courses() {
-
-
     return (
         <Routes>
             <Route path="/" element={<Navigate to="Home"/>}/>
@@ -19,7 +17,7 @@ function Courses() {
                 path="Assignments/:assignmentId"
                 element={<AssignmentEditor/>}
             />
-            <Route path="Grades" element={<Grades />}/>
+            <Route path="Grades" element={<Grades/>}/>
         </Routes>
     );
 }

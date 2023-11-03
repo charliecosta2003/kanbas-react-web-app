@@ -1,21 +1,20 @@
 import db from "../../Database";
-import {Link, useParams} from "react-router-dom";
-import {FaBars, FaFileExport, FaFileImport, FaFilter, FaGlasses, FaSearch} from "react-icons/fa";
+import {FaFileExport, FaFileImport, FaFilter, FaSearch} from "react-icons/fa";
 import CourseNavigation from "../CourseNavigation";
 import {FaGear} from "react-icons/fa6";
 import "./index.css";
 import TopBar from "../../TopBar";
+import {useSelector} from "react-redux";
 
 function Grades() {
-    const {courseId} = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
-    const assignments = db.assignments.filter((assignment) => assignment.course === courseId);
-    const enrollments = db.enrollments.filter((enrollment) => enrollment.course === courseId);
+    const course = useSelector((state) => state.coursesReducer.course);
+    const assignments = db.assignments.filter((assignment) => assignment.course === course._id);
+    const enrollments = db.enrollments.filter((enrollment) => enrollment.course === course._id);
     const topBarBreadcrumbs = ["Grades"];
 
     return (
         <>
-            <TopBar breadcrumbs={topBarBreadcrumbs} studentView={false}/>
+            <TopBar breadcrumbs={topBarBreadcrumbs} studentView={false} course={course}/>
             <CourseNavigation/>
 
             <div className="d-flex flex-nowrap justify-content-end mb-2">
