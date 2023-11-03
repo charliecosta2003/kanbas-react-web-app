@@ -4,15 +4,15 @@ import CourseNavigation from "../CourseNavigation";
 import './index.css';
 import {FaCircleCheck, FaEllipsisVertical, FaPenToSquare} from "react-icons/fa6";
 import TopBar from "../../TopBar";
-import {deleteAssignment, setAssignment} from "./assignmentsReducer";
+import {setAssignment} from "./assignmentsReducer";
 import {useDispatch, useSelector} from "react-redux";
+import DeleteAssignmentModal from "./DeleteAssignmentModal";
 
 function Assignments() {
     const {courseId} = useParams();
     const courses = useSelector((state) => state.coursesReducer.courses);
     const course = courses.find(course => course._id === courseId);
     const assignments = useSelector((state) => state.assignmentsReducer.assignments);
-    const assignment = useSelector((state) => state.assignmentsReducer.assignment);
     const initialAssignment = useSelector((state) => state.assignmentsReducer.initialAssignment);
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === course._id);
@@ -81,27 +81,7 @@ function Assignments() {
                 ))}
             </ul>
 
-            <div className="modal fade" id="deleteAssignmentModal" tabIndex="-1" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h1 className="modal-title fs-5">Delete Assignment</h1>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            Are you sure you want to delete this assignment?
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" className="btn btn-danger" data-bs-dismiss="modal"
-                                    onClick={() => dispatch(deleteAssignment(assignment._id))}>
-                                Delete
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <DeleteAssignmentModal/>
 
         </>
     );
