@@ -1,9 +1,15 @@
 import {deleteCourse} from "../Courses/coursesReducer";
 import {useDispatch, useSelector} from "react-redux";
+import * as client from "../Courses/client";
 
 function DeleteCourseModal({numCourses, setNumCourses}) {
     const course = useSelector((state) => state.coursesReducer.course);
     const dispatch = useDispatch();
+    const handleDeleteCourse = (courseId) => {
+        client.deleteCourse(courseId).then((status) => {
+            dispatch(deleteCourse(courseId));
+        });
+    }
 
     return (
         <div className="modal fade" id="deleteCourseModal" tabIndex="-1" aria-hidden="true">
@@ -20,10 +26,7 @@ function DeleteCourseModal({numCourses, setNumCourses}) {
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal"
-                                onClick={() => {
-                                    setNumCourses(numCourses - 1);
-                                    dispatch(deleteCourse(course._id))
-                                }}>
+                                onClick={() => {handleDeleteCourse(course._id)}}>
                             Delete
                         </button>
                     </div>

@@ -1,16 +1,19 @@
 import {addNewCourse, setCourse, updateCourse} from "../Courses/coursesReducer";
 import {useDispatch, useSelector} from "react-redux";
+import * as client from "../Courses/client";
 
 function CourseModal({numCourses, setNumCourses}) {
     const course = useSelector((state) => state.coursesReducer.course);
     const isNew = useSelector((state) => state.isNewReducer.isNew);
     const dispatch = useDispatch();
 
-    const handleSave = () => {
+    const handleSave = async () => {
         if (isNew) {
+            const newCourse = await client.createCourse(course);
             setNumCourses(numCourses + 1);
-            dispatch(addNewCourse({...course}));
+            dispatch(addNewCourse(newCourse));
         } else {
+            const status = await client.updateCourse(course);
             dispatch(updateCourse(course));
         }
     }

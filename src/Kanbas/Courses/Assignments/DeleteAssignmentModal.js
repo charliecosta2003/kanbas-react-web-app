@@ -1,9 +1,15 @@
 import {deleteAssignment} from "./assignmentsReducer";
 import {useDispatch, useSelector} from "react-redux";
+import * as client from "./client";
 
 function DeleteAssignmentModal() {
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
     const dispatch = useDispatch();
+    const handleDeleteAssignment = (assignmentId) => {
+        client.deleteAssignment(assignmentId).then((status) => {
+            dispatch(deleteAssignment(assignmentId));
+        });
+    };
 
     return (
         <div className="modal fade" id="deleteAssignmentModal" tabIndex="-1" aria-hidden="true">
@@ -20,7 +26,7 @@ function DeleteAssignmentModal() {
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal"
-                                onClick={() => dispatch(deleteAssignment(assignment._id))}>
+                                onClick={() => handleDeleteAssignment(assignment._id)}>
                             Delete
                         </button>
                     </div>

@@ -1,9 +1,15 @@
 import {deleteModule} from "./modulesReducer";
 import {useDispatch, useSelector} from "react-redux";
+import * as client from "./client";
 
 function DeleteModuleModal() {
     const dispatch = useDispatch();
     const module = useSelector((state) => state.modulesReducer.module);
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
 
     return (
         <div className="modal fade" id="deleteModuleModal" tabIndex="-1" aria-hidden="true">
@@ -20,7 +26,7 @@ function DeleteModuleModal() {
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal"
-                                onClick={() => dispatch(deleteModule(module._id))}>
+                                onClick={() => handleDeleteModule(module._id)}>
                             Delete
                         </button>
                     </div>

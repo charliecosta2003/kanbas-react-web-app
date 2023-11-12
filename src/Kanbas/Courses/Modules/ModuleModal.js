@@ -1,6 +1,7 @@
 import {addModule, setModule, updateModule} from "./modulesReducer";
 import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
+import * as client from "./client";
 
 function ModuleModal() {
 
@@ -9,10 +10,15 @@ function ModuleModal() {
     const module = useSelector((state) => state.modulesReducer.module);
     const isNew = useSelector((state) => state.isNewReducer.isNew);
 
-    const handleSave = () => {
+    const handleSave = async () => {
         if (isNew) {
-            dispatch(addModule({...module, course: courseId}));
+            client.createModule(courseId, module).then((module) => {
+                dispatch(addModule(module));
+            });
+            // const newModule = await client.createModule(courseId, module);
+            // dispatch(addModule(newModule));
         } else {
+            const status = await client.updateModule(module);
             dispatch(updateModule(module));
         }
     }

@@ -1,11 +1,12 @@
 import {Link} from "react-router-dom";
 import './index.css';
 import {useDispatch, useSelector} from "react-redux";
-import {setCourse} from "../Courses/coursesReducer";
+import {setCourse, setCourses} from "../Courses/coursesReducer";
 import {setIsNew} from "../Courses/isNewReducer";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import DeleteCourseModal from "./DeleteCourseModal";
 import CourseModal from "./CourseModal";
+import * as client from "../Courses/client.js";
 
 function Dashboard() {
     const courses = useSelector((state) => state.coursesReducer.courses);
@@ -13,6 +14,12 @@ function Dashboard() {
     const dispatch = useDispatch();
     const isNew = useSelector((state) => state.isNewReducer.isNew);
     const [numCourses, setNumCourses] = useState(courses.length);
+    useEffect(() => {
+        client.findAllCourses()
+            .then((courses) =>
+                dispatch(setCourses(courses))
+            );
+    }, [courses]);
 
     return (
         <>
