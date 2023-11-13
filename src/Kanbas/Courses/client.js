@@ -4,6 +4,7 @@ const API_BASE = process.env.REACT_APP_API_BASE;
 const URL = `${API_BASE}/courses`;
 
 export const createCourse = async (course) => {
+    console.log(API_BASE);
     const response = await axios.post(URL, course);
     return response.data;
 }
