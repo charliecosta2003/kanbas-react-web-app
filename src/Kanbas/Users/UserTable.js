@@ -30,8 +30,10 @@ function UserTable() {
             try {
                 const newUser = await client.createUser(user);
                 setUsers([newUser, ...users]);
+                setUser(blankUser);
             } catch (err) {
                 console.log(err);
+                setError(err.response.data.message);
             }
         }
     };
@@ -66,6 +68,7 @@ function UserTable() {
             try {
                 const status = await client.updateUser(user);
                 setUsers(users.map((u) => (u._id === user._id ? user : u)));
+                setUser(blankUser);
             } catch (err) {
                 console.log(err);
             }

@@ -29,6 +29,7 @@ function Account({setIsSignedIn}) {
     const findUserById = async (id) => {
         const user = await client.findUserById(id);
         setAccount(user);
+        setSavedAccount(user);
     };
 
     const signout = async () => {
@@ -43,13 +44,13 @@ function Account({setIsSignedIn}) {
         } else {
             fetchAccount();
         }
-    }, []);
+    }, [id]);
 
     return (
         <>
             <h1>Account</h1>
             <div className="d-flex justify-content-center">
-                {account && (
+                {savedAccount && account && (
                     <div style={{"width": "300px"}} className="border border-dark rounded p-3">
                         <label htmlFor="account-username" className="form-label mb-1">
                             Username
