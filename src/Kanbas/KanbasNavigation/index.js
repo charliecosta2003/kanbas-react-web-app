@@ -12,7 +12,7 @@ function KanbasNavigation() {
 
     return (
         <div className="list-group kanbas-nav-outer top-z-index d-none d-md-block" style={{width: 150}}>
-            <li className="list-group-item kanbas-nav-item">
+            <li className="list-group-item kanbas-nav-item" id="image">
                 <img width='80px' src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"/>
             </li>
             {links.map((link, index) => (
