@@ -15,8 +15,8 @@ export const account = async (user) => {
     return response.data;
 };
 
-export const updateUser = async (user) => {
-    const response = await request.put(`${USERS_API}/${user._id}`, user);
+export const updateUser = async (user, signedIn) => {
+    const response = await request.put(`${USERS_API}/${user._id}?signedIn=${signedIn}`, user);
     return response.data;
 };
 
